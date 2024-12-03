@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    
+    <div class="form-container">
+        <h1>STUDENT FORM 📄</h1>
+        <form>
+            <table id="header-row">
+                <tr>
+                    <th>Name</th>
+                    <td><input class="form-input" type="text" id="student-name" name="name" value= "" placeholder="Enter your name"></td>
+                </tr>
+                <tr>
+                    <th>Age</th>
+                    <td><input class="form-input" type="number" id="student-age" placeholder="Enter your age"></td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td>
+                        <input type="radio" name="gender" id="male" value="Male" class="radio-section">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="Female" class="radio-section">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Course</th>
+                    <td>
+                        <select class="form-select" id="student-course">
+                            <option value="">Select Course</option>
+                            <option>Java</option>
+                            <option>Python</option>
+                            <option>C++</option>
+                            <option>C</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>E-mail</th>
+                    <td><input class="form-input" type="email" id="student-email"placeholder="Enter Your email"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button class="form-button" type="submit" onclick="saveDetails(event)">Save</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <div class="display-details">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Course</th>
+                <th>E-mail</th>
+                <th>Action</th>
+            </tr>
+            <tbody id="display-names">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+
+
+
+
+</body>
+
+</html>

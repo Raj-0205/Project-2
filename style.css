@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins", serif;
+    background: #211551;
+}
+
+
+
+.form-container {
+    width: 500px;
+    margin: 50px auto;
+    position: relative;
+    bottom: 28px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+#header-row {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 10px;
+    font-weight: 600;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.form-input {
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    padding: 2px;
+    border: 1px solid #ccc;
+    box-shadow: rgba(#ccc) 0px 4px 12px;
+    outline: none;
+}
+
+.form-select {
+    width: 100%;
+    height: 30px;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+input[type="radio"]{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    right: 28%;
+    top: 2px;
+}
+input[type="radio"]:checked{
+    color: blue;
+}
+label{
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    right:28%;
+}
+.form-input[type="number"]::-webkit-inner-spin-button,
+.form-input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form-button {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #5cdb5c;
+}
+.form-button:hover{
+    background-color: grey;
+}
+.display-details {
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    margin: 40px auto;
+    position: relative;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.display-details th,
+.display-details td {
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+.display-details th {
+    background-color: #f0f0f0;
+    width: 100px;
+    background-color: black;
+    font-size: 18px;
+    color: white;
+    
+} 
+.delete-btn{
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.delete-btn:hover{
+    background-color: #e91e63;
+}
